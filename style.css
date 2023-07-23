@@ -61,3 +61,22 @@
 .groups .img-card {
   background-image: url(https://picsum.photos/398/398);
 }
+.starting .img-card-wrapper {
+  /* we need to set the width on the wrapper <div> because the aspect ratio box padding top is based on this value */
+  width: 120px;
+  max-width: 120px;
+  flex-shrink: 0;
+}
+
+.starting .img-card {
+  background-image: url(https://picsum.photos/398/398);
+  /* image from https://picsum.photos/, random photos are genereted each time */
+  padding-top: calc(5 / 4 * 100%);
+  /* a slightly longer portrait aspect ratio */
+  background-size: cover;
+  background-position: center;
+}
+
+.starting .text-box {
+  font-size: 0.9rem;
+}
