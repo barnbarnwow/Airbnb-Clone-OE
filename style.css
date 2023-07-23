@@ -34,3 +34,30 @@
 .experience-filter .nav-item a {
   font-size: 0.9rem;
 }
+
+.experience .img-card {
+  background-image: url(https://picsum.photos/400/400);
+  /* image from https://picsum.photos/, random photos are genereted each time */
+  padding-top: calc(4.5 / 4 * 100%);
+  /* portrait aspect ratio */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .experience {
+    width: 20%;
+  }
+}
+
+.best .img-card {
+  background-image: url(https://picsum.photos/399/399);
+}
+
+.weekend .img-card {
+  background-image: url(https://picsum.photos/401/401);
+}
+
+.groups .img-card {
+  background-image: url(https://picsum.photos/398/398);
+}
